@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Music Landing</title>
 </head>
 <body>
     <div class="container">
@@ -36,19 +36,6 @@
         <source src="./audio/music.mp3" type="audio/mp3">
     </audio>
 
-    <script>
-        var music = document.getElementById("music");
-        var icon = document.getElementById("icon");
-
-        icon.onclick = function() {
-            if (music.paused) {
-                music.play();
-                icon.src = "./images/pause.png";
-            } else {
-                music.pause();
-                icon.src = "./images/play-button.png";
-            }
-        }
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
